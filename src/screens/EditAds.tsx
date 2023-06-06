@@ -340,7 +340,7 @@ const EditAds = () => {
         }}
       />
     );
-  }, [errors.price, value]);
+  }, [errors.price, t, value]);
   const renderSom = useMemo(() => {
     return (
       <MyInput
@@ -399,7 +399,7 @@ const EditAds = () => {
         }}
       />
     );
-  }, [open2, value.leaves_at]);
+  }, [open2, value]);
 
   const renderSelectButton = useMemo(() => {
     return (
@@ -481,7 +481,7 @@ const EditAds = () => {
         />
       </>
     );
-  }, [local_luggage_type, type, value]);
+  }, [local_luggage_type, t, type, value]);
 
   return (
     <View style={styles.container}>
